@@ -12,9 +12,13 @@ Introductory/Summary: Overall, these accessions from the GeneLab data repository
 **Main Idea:** Combine OSD-37 , OSD-38 , OSD-120, OSD-231, OSD-321.
 In addition, each of the studies can be analysed separately 
 https://visualization.genelab.nasa.gov/data/OSD-37
+
 https://visualization.genelab.nasa.gov/data/OSD-38
+
 https://visualization.genelab.nasa.gov/data/OSD-120
+
 https://visualization.genelab.nasa.gov/data/OSD-231
+
 https://visualization.genelab.nasa.gov/data/OSD-321
 
 This can be done using the new NASA GeneLab multi-study visualisation tools: https://visualization.genelab.nasa.gov/data/
