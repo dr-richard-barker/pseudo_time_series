@@ -43,3 +43,37 @@ GeneLab Data System (GLDS) Identifiers enable tracking of specific datasets with
 
 
 
+
+**Example code used for multi-study meta-analaysis** 
+
+R code
+''
+#Load libraries
+library(tidyverse)
+library(data.table)
+#Set working directory
+setwd("New_Plant_Matrix")
+
+URLs<-c("https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-120_rna_seq_Normalized_Counts.csv?version17",
+        "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-38_rna_seq_Normalized_Counts.csv?version12",
+        "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-37_rna_seq_Normalized_Counts.csv?version11",
+        "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-321_rna_seq_Normalized_Counts.csv?version4",
+        "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-218_rna_seq_Normalized_Counts.csv?version10")
+        
+        destFiles<-c("https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-120_rna_seq_Normalized_Counts.csv?version17",
+                     "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-38_rna_seq_Normalized_Counts.csv?version12",
+                     "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-37_rna_seq_Normalized_Counts.csv?version11",
+                     "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-321_rna_seq_Normalized_Counts.csv?version4",
+                     "https://genelab-data.ndc.nasa.gov/genelab/static/media/dataset/GLDS-218_rna_seq_Normalized_Counts.csv?version10")
+      
+
+#Download files from URLs and save them to destination files
+
+for (i in 1:length(URLs)){
+  download.file(URLs[i], destFiles[i])
+}
+
+PlantMetaMatrix <- read_csv("destFiles")
+''
+
+
