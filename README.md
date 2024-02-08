@@ -123,9 +123,11 @@ To perform extra analysis in R we had to merge the normalised count's matrix.
 
 R code
 ``
+
 #Load libraries
 library(tidyverse)
 library(data.table)
+
 #Set working directory
 setwd("New_Plant_Matrix")
 
