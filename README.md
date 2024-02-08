@@ -26,7 +26,8 @@ The exploration of space presents unique challenges and opportunities for plant 
 
 
 ![Slide3](More_slides_and_figures/Slide3.png)
-**Figure 2:** Filtering using GeneLabv metadata identies similar studies.
+**Figure 2:** Filtering using GeneLabv metadata identifies similar studies (as described by Barker et al., 2023).
+
 
 **Separate analysis:** Combining anlysis of OSD-37 , OSD-38 , OSD-120, OSD-231 and OSD-321 will provide new insights. 
 
