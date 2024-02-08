@@ -10,10 +10,11 @@ Arabidopsis as the species, Flight vs Ground as the Treatment, RNAseq as the ass
 
 **Introductory/Summary:** Overall, these accessions from the GeneLab data repository provide invaluable data for understanding the complex dynamics of Arabidopsis thaliana development under varied environmental conditions, particularly focusing on the effects of microgravity and light on different genotypes, ages, and tissues. Spaceflight presents a unique environment for biological experiments, notably due to the presence of microgravity and other space-specific factors. Understanding how plants respond to these conditions is crucial for long-term space missions and offers insights into fundamental biological processes. Arabidopsis, a widely used model organism in plant biology, has been the focus of numerous studies to explore plant growth and development in space. The selection of these 5 GLDS datasets, comprising 38 observations across 8 variables, provides a comprehensive overview of various Arabidopsis seedling development experiments conducted during spaceflight.
 ![Slide7](More_slides_and_figures/Slide7.png)
+**Figure 1:** Seedling establishment might be effect due to changes in hormonal signalling due to changes in gasuous exchange as well as due to the lack of a gravity vector. 
 
 **Importance of seed germination for seedling establishment and its influence on the life cycle**
 
-Seed germination is a crucial stage in the life cycle of plants, marking the transition from a dormant seed to an actively growing seedling. This process is essential for seedling establishment and subsequent plant growth, as it determines the vigor and overall health of the plant. The importance of seed germination extends beyond the initial stages of plant development, as it also influences the plant's reproductive success and ability to adapt to changing environmental conditions. In this essay, we will explore the significance of seed germination for seedling establishment and its impact on the life cycle of plants. We will examine the role of germination in determining seedling vigor and subsequent plant growth, as well as its influence on the overall reproductive success and adaptation strategies of plants.
+Seed germination is a crucial stage in the life cycle of plants, marking the transition from a dormant seed to an actively growing seedling. This process is essential for seedling establishment and subsequent plant growth, as it determines the vigour and overall health of the plant. The importance of seed germination extends beyond the initial stages of plant development, as it also influences the plant's reproductive success and ability to adapt to changing environmental conditions. In this essay, we will explore the significance of seed germination for seedling establishment and its impact on the life cycle of plants. We will examine the role of germination in determining seedling vigour and subsequent plant growth, as well as its influence on the overall reproductive success and adaptation strategies of plants.
 
 **Microgravity and its effects on seedling establishment** 
 
@@ -24,11 +25,10 @@ Microgravity, also known as weightlessness, is a unique environment characterize
 The exploration of space presents unique challenges and opportunities for plant growth and agriculture. Understanding the fundamental processes of seed germination and their regulation in microgravity environments is crucial for the success of future space missions and the establishment of sustainable food production systems beyond Earth. This essay aims to examine the stages of seed germination and their hormonal regulation, compare seed germination in microgravity and ground controls, investigate the effects of light on seed germination in microgravity, and discuss the implications of these findings for space agriculture and future research. By gaining insights into the physiological and molecular mechanisms underlying seed germination in microgravity, we can develop strategies to optimize plant growth and crop production in space, ensuring the long-term sustainability of human space exploration and the potential for off-world agriculture
 
 
-
 ![Slide3](More_slides_and_figures/Slide3.png)
+**Figure 2:** Filtering using GeneLabv metadata identies similar studies.
 
-
-**MSeparate analysis:** Combining anlysis of OSD-37 , OSD-38 , OSD-120, OSD-231 and OSD-321 will provide new insights. 
+**Separate analysis:** Combining anlysis of OSD-37 , OSD-38 , OSD-120, OSD-231 and OSD-321 will provide new insights. 
 
 Each of the studies can be analysed separately 
 
@@ -47,10 +47,16 @@ https://visualization.genelab.nasa.gov/data/OSD-321
 
 This can be done using the new NASA GeneLab multi-study visualisation tools: https://visualization.genelab.nasa.gov/data/
 
-![PCA plot ](PCA_plot.png)
-
-
 ![Slide41](More_slides_and_figures/Slide41.png)
+
+![Slide51](More_slides_and_figures/Slide51.png)
+
+![Slide50](More_slides_and_figures/Slide50.png)
+
+![Slide49](More_slides_and_figures/Slide49.png)
+
+**Figure 3:** PCA, MDS and t-sne plots showing combined samples. Color grouping is by OSD-#, Strain and gravitational factor respectively. 
+
 
 
 **Similarities and differences in methods GeneLab Metadata mining reveals similarities between these studies** 
@@ -72,12 +78,15 @@ GeneLab Data System (GLDS) Identifiers enable tracking of specific datasets with
 
 ![Slide65](More_slides_and_figures/Slide65.png)
 
+**Figure 4:** A series of heat maps showing the tope most significantly differnetly expression loci's expression across all studies but selected by on DESeq models calulated for each OSD-# accession. 
+
 **This heat map shows some of the differentially expressed loci that will be discussed at future NASA GeneLab Plant Analysis Working Group meetings.** 
 2bc...  
 
 
 
-To perform extra analysis in R we had to merge the normslaized counts matrix's. 
+
+To perform extra analysis in R we had to merge the normalised count's matrix. 
 
 **Example code used for multi-study meta-analysis** 
 
@@ -130,7 +139,7 @@ PCA ontology analysis can identify biological processes and KEGG pathways involv
 
 
 
-Future work: 
+**Future work:** 
 Looking for collaborators to help with single-cell enrichment analysis, machine learning and DREM transcription factor analysis. 
 
 
