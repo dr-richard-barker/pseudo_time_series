@@ -9,8 +9,9 @@ Arabidopsis as the species, Flight vs Ground as the Treatment, RNAseq as the ass
 **Keywords:** Spaceflight, RNAseq, meta-analysis, plant genetics, N-degron pathways, hypoxia, Reactive Oxygen Species(ROS), nitric oxide (NO), The N-end rule pathway of ubiquitin-mediated targeted proteolysis, protein degradation, proteostasis, oxygen,
 
 **Introductory/Summary:** Overall, these accessions from the GeneLab data repository provide invaluable data for understanding the complex dynamics of Arabidopsis thaliana development under varied environmental conditions, particularly focusing on the effects of microgravity and light on different genotypes, ages, and tissues. Spaceflight presents a unique environment for biological experiments, notably due to the presence of microgravity and other space-specific factors. Understanding how plants respond to these conditions is crucial for long-term space missions and offers insights into fundamental biological processes. Arabidopsis, a widely used model organism in plant biology, has been the focus of numerous studies to explore plant growth and development in space. The selection of these 5 GLDS datasets, comprising 38 observations across 8 variables, provides a comprehensive overview of various Arabidopsis seedling development experiments conducted during spaceflight.
+
 ![Slide7](More_slides_and_figures/Slide7.png)
-**Figure 1:** Seedling establishment might be effect due to changes in hormonal signalling due to changes in gasuous exchange as well as due to the lack of a gravity vector. 
+**Figure 1:** Seedling establishment might be affect due to changes in hormonal signalling due to changes in gaseuous exchange as well as due to the lack of a gravity vector. 
 
 **Importance of seed germination for seedling establishment and its influence on the life cycle**
 
@@ -79,15 +80,44 @@ GeneLab Data System (GLDS) Identifiers enable tracking of specific datasets with
 
 ![Slide65](More_slides_and_figures/Slide65.png)
 
-**Figure 4:** A series of heat maps showing the tope most significantly differnetly expression loci's expression across all studies but selected by on DESeq models calulated for each OSD-# accession. 
 
-**This heat map shows some of the differentially expressed loci that will be discussed at future NASA GeneLab Plant Analysis Working Group meetings.** 
-2bc...  
+**Figure 4:** A series of heat maps showing the tope most significantly differentialy expression loci's expression across all studies but selected by on DESeq models calculated for each OSD-# accession. 
 
 
+**PCA ontology analysis can identify biological processes and KEGG pathways involved in seedlings' establishment during spaceflight.** 
 
+
+
+![Slide53](More_slides_and_figures/Slide53.png)
+**Figure 5:** Onology enrichment analysis on loci associated with the first 5 eigenvalue tragectories of the PCA analysis. 
+
+
+
+![Mitochondria_ox_phos](More_slides_and_figures/Mitochondria_ox_phos.png)
+**Figure 6:** Wildtype Space flight verse Ground control data projected onto KEGG oxidative phosphorylation. 
+
+
+
+![Test_Molecular function dotplot](More_slides_and_figures/Test_Molecular_function_dotplot.png)
+**Figure 7:** Natural variation in Space flight verse Ground control data projected onto Molecular function. 
+
+
+
+**Seed germination and seedling development involve a series of environmentally regulated genetic circuits.** 
+
+![Slide9](More_slides_and_figures/Slide9.png)
+**Figure 8:** Diagram using circuit analogies to explain environmental regulation of plant hormonal pathways involved in seedlings establishment. 
+
+
+# Future work: 
+**These heat maps show some of the differentially expressed loci that will be discussed at future NASA GeneLab Plant Analysis Working Group meetings.** 
+
+Looking for collaborators to help with single-cell enrichment analysis, machine learning and DREM transcription factor analysis. 
 
 To perform extra analysis in R we had to merge the normalised count's matrix. 
+**2bc...**  
+
+
 
 **Example code used for multi-study meta-analysis** 
 
@@ -130,20 +160,6 @@ PlantMetaMatrix <- read_csv("destFiles")
 ``
 
 
-Seed germination and seedling development involve a series of environmentally regulated genetic circuits. 
+**If you want to get started these lines of code might help**
 
-![Slide9](More_slides_and_figures/Slide9.png)
-
-PCA ontology analysis can identify biological processes and KEGG pathways involved in seedlings' establishment during spaceflight. 
-
-![Slide53](More_slides_and_figures/Slide53.png)
-
-
-
-**Future work:** 
-Looking for collaborators to help with single-cell enrichment analysis, machine learning and DREM transcription factor analysis. 
-
-
-
-
-
+**Thanks for your help**
