@@ -9,6 +9,10 @@ Arabidopsis as the species, Flight vs Ground as the Treatment, RNAseq as the ass
 
 **Introductory/Summary:** Overall, these accessions from the GeneLab data repository provide invaluable data for understanding the complex dynamics of Arabidopsis thaliana development under varied environmental conditions, particularly focusing on the effects of microgravity and light on different genotypes, ages, and tissues. Spaceflight presents a unique environment for biological experiments, notably due to the presence of microgravity and other space-specific factors. Understanding how plants respond to these conditions is crucial for long-term space missions and offers insights into fundamental biological processes. Arabidopsis, a widely used model organism in plant biology, has been the focus of numerous studies to explore plant growth and development in space. The selection of these 5 GLDS datasets, comprising 38 observations across 8 variables, provides a comprehensive overview of various Arabidopsis seedling development experiments conducted during spaceflight.
 
+
+![Slide2](More_slides_and_figures/Slide2.png)
+
+
 **Main Idea:** Combine OSD-37 , OSD-38 , OSD-120, OSD-231, OSD-321.
 
 This can be done using the new NASA GeneLab multi-study visualisation tools: https://visualization.genelab.nasa.gov/data/
@@ -89,5 +93,14 @@ PlantMetaMatrix <- read_csv("destFiles")
 ``
 
 
+Seed germination and seedling development involve a series of environmentally regulated genetic circuits. 
 
 ![Slide9](More_slides_and_figures/Slide9.png)
+
+
+
+![Slide6](More_slides_and_figures/Slide6.png)
+
+
+
+
