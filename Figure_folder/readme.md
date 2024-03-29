@@ -30,7 +30,7 @@ https://visualization.genelab.nasa.gov/data/OSD-38
 
 https://visualization.genelab.nasa.gov/data/OSD-120
 
-https://visualization.genelab.nasa.gov/data/OSD-231
+https://visualization.genelab.nasa.gov/data/OSD-218
 
 https://visualization.genelab.nasa.gov/data/OSD-321
 
@@ -40,29 +40,29 @@ https://visualization.genelab.nasa.gov/data/OSD-321
 
 
 
-<figure><img src="../More_slides_and_figures/Slide41.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide41.png" alt=""><figcaption><p>Summary of OSD accessions that can be merged for meta-analysis. Heatmap showing the transcriptional variation of the most 1000 variable loci with dendrograms showing sample connectivity based on expression variation. </p></figcaption></figure>
 
-<figure><img src="../More_slides_and_figures/Slide51.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide51.png" alt=""><figcaption><p>Comparison of the data distribution and how it is affected by normalisation using the OSDR multi-study visualisation application. PC1, PC2, PC3 and PC4 are all shown in minimal pairwise comparisons. </p></figcaption></figure>
 
-<figure><img src="../More_slides_and_figures/Slide50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide50.png" alt=""><figcaption><p>Further analysis and clustering revealed that PC1 is the strain (genotype&#x26;ecotype). PC2 is the tissue mission factor, PC3  is the ecotype mission factor, PC4 is correlated with the gravitational factor (Flight vs ground), PC5 may be radiation. </p></figcaption></figure>
 
-![Slide49](../More\_slides\_and\_figures/Slide49.png)
+![SlFigure 3: PCA, MDS and t-sne plots showing combined samples. Color grouping is by OSD-#, Strain and gravitational factor respectively. (slide49)](../More\_slides\_and\_figures/Slide49.png)
 
-**Figure 3:** PCA, MDS and t-sne plots showing combined samples. Color grouping is by OSD-#, Strain and gravitational factor respectively.
 
-***
 
 ***
 
-<figure><img src="../More_slides_and_figures/Slide61.png" alt=""><figcaption></figcaption></figure>
+***
 
-<figure><img src="../More_slides_and_figures/Slide62.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide61.png" alt=""><figcaption><p>Heat map showing transcriptional variance across 5 OSR studies. Default thersholds and clustering options were used. </p></figcaption></figure>
 
-<figure><img src="../More_slides_and_figures/Slide63.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide62.png" alt=""><figcaption><p>Heat map showing transcriptional variance across 5 OSR studies. Default thersholds and clustering options were used. </p></figcaption></figure>
 
-<figure><img src="../More_slides_and_figures/Slide64.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide63.png" alt=""><figcaption><p>Heat map showing transcriptional variance across 5 OSR studies. Default thersholds and clustering options were used. </p></figcaption></figure>
 
-![Slide65](../More\_slides\_and\_figures/Slide65.png)
+<figure><img src="../More_slides_and_figures/Slide64.png" alt=""><figcaption><p>Heat map showing transcriptional variance across 5 OSR studies. Default thersholds and clustering options were used. </p></figcaption></figure>
+
+![Heat map showing transcriptional variance across 5 OSR studies. Default thersholds and clustering options were used. ](../More\_slides\_and\_figures/Slide65.png)
 
 **Figure 4:** A series of heat maps showing the top most significantly differentially expression loci's expression across all studies but selected by on DESeq models calculated for each OSD-# accession.
 

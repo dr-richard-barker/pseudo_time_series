@@ -4,7 +4,7 @@ description: >-
   without light-induced photomorphogenesis.
 ---
 
-# MATRIX5: Pseudo-time-series seedling establishment in microgravity with and without light
+# Pseudo-time-series seedling establishment in microgravity with and without light
 
 **MATRIX-V5 Plant AWG meta-analysis** This repo contains data products produced while exploring a series of studies with similar meta-data characteristics Arabidopsis as the species, Flight vs Ground as the Treatment, RNAseq as the assay type, no fraction G forces or additional radiation treatments.
 
@@ -38,7 +38,7 @@ The exploration of space presents unique challenges and opportunities for plant 
 
 ## Future work:
 
-**These heat maps show some of the differentially expressed loci that will be discussed at future NASA GeneLab Plant Analysis Working Group meetings.**
+**These heat maps (see results page) show some of the differentially expressed loci that will be discussed at future NASA GeneLab Plant Analysis Working Group meetings.**
 
 Looking for collaborators for this like...
 
