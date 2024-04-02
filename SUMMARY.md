@@ -6,3 +6,4 @@
 * [Finetuning counts, normalised counts and factor table production](counts\_normalised-counts\_and\_factors\_tables/readme.md)
 * [Upsettr plots draft script](upsettr\_plot/readme.md)
 * [Example code used for multi-study meta-analysis](example-code-used-for-multi-study-meta-analysis.md)
+* [Future work:](future-work.md)
