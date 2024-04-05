@@ -40,9 +40,19 @@ https://visualization.genelab.nasa.gov/data/OSD-321
 
 
 
-<figure><img src="../More_slides_and_figures/Slide41.png" alt=""><figcaption><p>Summary of OSD accessions that can be merged for meta-analysis. Heatmap showing the transcriptional variation of the most 1000 variable loci with dendrograms showing sample connectivity based on expression variation. </p></figcaption></figure>
+<figure><img src="../More_slides_and_figures/Slide41.png" alt=""><figcaption><p>Summary of OSD accessions that can be merged for meta-analysis. Heatmap showing the transcriptional variation of the most 1000 variable loci with dendrograms showing sample connectivity based on expression variation. <br></p></figcaption></figure>
 
 <figure><img src="../More_slides_and_figures/Slide51.png" alt=""><figcaption><p>Comparison of the data distribution and how it is affected by normalisation using the OSDR multi-study visualisation application. PC1, PC2, PC3 and PC4 are all shown in minimal pairwise comparisons. </p></figcaption></figure>
+
+
+
+\
+
+
+\
+
+
+
 
 <figure><img src="../More_slides_and_figures/Slide50.png" alt=""><figcaption><p>Further analysis and clustering revealed that PC1 is the strain (genotype&#x26;ecotype). PC2 is the tissue mission factor, PC3  is the ecotype mission factor, PC4 is correlated with the gravitational factor (Flight vs ground), PC5 may be radiation. </p></figcaption></figure>
 
