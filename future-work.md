@@ -11,6 +11,10 @@ Looking for collaborators for this like...
 
 
 
+cell predictor&#x20;
+
+{% embed url="https://biobigdata.nju.edu.cn/scplantdb/tools/predct" %}
+
 1. Description and discussion of results.
 2. Reactome pathway visualisation
 3. Single-cell enrichment analysis
