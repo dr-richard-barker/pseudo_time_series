@@ -8,3 +8,4 @@
 * [Upsettr plots draft script](upsettr\_plot/readme.md)
 * [Example code used for multi-study meta-analysis](example-code-used-for-multi-study-meta-analysis.md)
 * [Future work:](future-work.md)
+* [R-tutors code / report](r-tutors-code-report.md)

@@ -103,6 +103,43 @@ ggplot(top_pathways_long, aes(x = reorder(pathway_name, value), y = value, fill 
 
 
 
+
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+```
+library(ggplot2)
+library(dplyr)
+
+# Assuming 'pathway_name' is a column in df that contains the names of the pathways.
+# If the column has a different name, replace 'pathway_name' with the correct column name.
+# Also assuming that "#Entities" refers to 'x_entities_found'.
+# If it refers to a different column, replace 'x_entities_found' with the correct column name.
+
+# Filter the top 20 pathways with the largest "#Entities"
+top_pathways <- df %>%
+  arrange(desc(x_entities_found)) %>%
+  slice(1:20)
+
+# Normalize the reactions found and total by dividing by the maximum value in the subset
+top_pathways$x_reactions_found_normalized <- top_pathways$x_reactions_found / max(top_pathways$x_reactions_found)
+top_pathways$x_reactions_total_normalized <- top_pathways$x_reactions_total / max(top_pathways$x_reactions_total)
+
+# Create a long format data frame for plotting with ggplot2
+top_pathways_long_normalized <- reshape2::melt(top_pathways, id.vars = "pathway_name", measure.vars = c("x_reactions_found_normalized", "x_reactions_total_normalized"))
+
+# Create the normalized bar chart for the top 20 pathways
+ggplot(top_pathways_long_normalized, aes(x = reorder(pathway_name, value), y = value, fill = variable)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Pathway Name", y = "Normalized Number of Reactions", fill = "Measure") +
+  scale_fill_manual(values = c("x_reactions_found_normalized" = "blue", "x_reactions_total_normalized" = "red"))
+```
+
+
+
+Network graph visualizulisation&#x20;
+
 Network graph visualizing the connections between the "Pathway name" and the associated genes from the "Submitted entities found" field. The sizes of the pathway nodes are determined by the number of entities found, and the edges are colored on a gradient from red (lower entities ratio) to blue (higher entities ratio), with arrows at both ends to indicate bidirectional relationships.
 
 This visualization provides a useful overview of how different genes are interconnected with specific metabolic pathways in _Arabidopsis thaliana_. Such a graph can help in identifying key pathways with numerous genetic interactions, which could be critical for deeper metabolic studies or genetic manipulation projects.
@@ -190,6 +227,54 @@ for gene in genes:
 `nx.draw_networkx_edges(G_top_pathways, pos_top, edge_color='gray', alpha=0.5)`
 
 `plt.title('Top 20 Pathways Connectivity via Shared Genes') plt.axis('off') # Turn off the axis plt.show()`
+
+\`\`\`
+
+
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+\`\`\`
+
+`import matplotlib.colors as mcolors`
+
+`Getting the range for "#Reactions found" to set the color scale`
+
+`reactions_range = data['#Reactions found'].max() - data['#Reactions found'].min()`
+
+`Creating a new graph with enhanced layout to minimize label overlap`
+
+`G_enhanced = nx.Graph()`
+
+`Add nodes and edges as before, but now with additional attributes for visualization`
+
+`for pathway1, genes1 in pathway_genes.items(): for pathway2, genes2 in pathway_genes.items(): if pathway1 != pathway2 and not genes1.isdisjoint(genes2): G_enhanced.add_edge(pathway1, pathway2)`
+
+`Set node size and color based on "#Reactions found"`
+
+`reactions_counts = {row['Pathway name']: row['#Reactions found'] for index, row in data.iterrows()} max_reactions = max(reactions_counts.values()) min_reactions = min(reactions_counts.values())`
+
+`Calculate colors for nodes`
+
+`color_map = [mcolors.to_hex(plt.cm.Reds((reactions_counts.get(node, 0) - min_reactions) / (max_reactions - min_reactions))) for node in G_enhanced.nodes]`
+
+`Improved layout using the Kamada-Kawai layout algorithm to minimize label overlap`
+
+`pos_enhanced = nx.kamada_kawai_layout(G_enhanced)`
+
+`Draw nodes with color mapping based on "#Reactions found"`
+
+`nx.draw_networkx_nodes(G_enhanced, pos_enhanced, node_size=700, node_color=color_map)`
+
+`Only label the top 20 pathways`
+
+`nx.draw_networkx_labels(G_enhanced, pos_enhanced, labels={n: n if n in top_pathways_names else '' for n in G_enhanced.nodes}, font_size=9)`
+
+`Draw edges`
+
+`nx.draw_networkx_edges(G_enhanced, pos_enhanced, edge_color='gray', alpha=0.5)`
+
+`plt.title('Enhanced Top 20 Pathways Connectivity via Shared Genes') plt.axis('off') # Turn off the axis plt.show()`
 
 \`\`\`
 
