@@ -4,7 +4,7 @@ description: AWG Pseudo-Time-Series
 
 # Action Plan
 
-Link to edit the document, please add your name as a collaborator.&#x20;
+[Link to edit the document, please add your name as a collaborator. ](https://docs.google.com/document/d/17qJ9rAuMRBcwOBBqIB3tsD-fFK3qC76xkhww2px7FiA/edit?usp=sharing)
 
 {% embed url="https://docs.google.com/document/d/17qJ9rAuMRBcwOBBqIB3tsD-fFK3qC76xkhww2px7FiA/edit?usp=sharing" %}
 
