@@ -10,3 +10,4 @@
 * [Example code used for multi-study meta-analysis](example-code-used-for-multi-study-meta-analysis.md)
 * [Future work:](future-work.md)
 * [R-tutors code / report](r-tutors-code-report.md)
+* [Multi-study example OSD-37 & OSD-38 & OSD-120 & OSD-321](multi-study-example-osd-37-and-osd-38-and-osd-120-and-osd-321.md)
