@@ -14,3 +14,6 @@ description: AWG Pseudo-Time-Series
 
 {% embed url="https://docs.google.com/spreadsheets/d/1KPTfZxSkflvFsmjG5Sq5aeDxzuMn2tnHkfpJ-_5IX_Y/edit?usp=sharing" %}
 
+
+
+{% embed url="https://x.com/i/status/1800533445011271734" %}
