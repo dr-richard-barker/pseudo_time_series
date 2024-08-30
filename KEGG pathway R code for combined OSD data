@@ -1,0 +1,65 @@
+# Load necessary libraries
+library(DESeq2)
+library(dplyr)
+library(pathview)
+library(pheatmap)
+library(org.At.tair.db)
+library(SBGNview)
+
+# Load your data
+setwd("directory")
+df <- read.csv("arabid.csv")
+
+# Convert the first column to rownames (assuming first column is Gene ID)
+rownames(df) <- df[,1]
+df1 <- df[,-1]
+
+# Ensure the count data is integer
+df1 <- round(df1)
+
+# Check the dimensions of the data
+print(dim(df1))
+
+# Create a sample metadata dataframe (replace with actual metadata)
+num_samples <- ncol(df1)
+colData <- data.frame(
+  condition = factor(rep(c("control", "treatment"), each = num_samples / 2))
+)
+
+# Check the dimensions of the metadata
+print(dim(colData))
+
+# Create DESeq2 dataset
+dds <- DESeqDataSetFromMatrix(
+  countData = as.matrix(df1),
+  colData = colData,
+  design = ~ condition
+)
+
+# Run DESeq2 analysis
+dds <- DESeq(dds)
+
+# Extract results with log2 fold change
+res <- results(dds)
+
+# Normalize the expression data
+normalized_counts <- counts(dds, normalized = TRUE)
+
+gene_names <- df$Gene_ID
+
+# Filter the results for gluconeogenesis genes
+results <- res[rownames(res) %in% gene_names, ]
+
+# Map TAIR IDs to Entrez IDs
+gene_entrez <- mapIds(org.At.tair.db, keys = rownames(results), column = "ENTREZID", keytype = "TAIR", multiVals = "first")
+
+# Remove genes that could not be mapped
+mapped_genes <- !is.na(gene_entrez)
+results <- results[mapped_genes, ]
+gene_entrez <- gene_entrez[mapped_genes]
+
+# Pathview visualization for pathway using Entrez IDs
+pathview(gene.data = setNames(results$log2FoldChange, gene_entrez), 
+         pathway.id = "ath00604", #use ID names of different KEGG pathways from KEGG pathway database
+         species = "ath", 
+         gene.idtype = "entrez")
